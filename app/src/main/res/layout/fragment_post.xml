@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarid"
+        android:gravity="center"
+        android:elevation="0dp"
+        >
+
+    </android.support.design.widget.AppBarLayout>
+    //分割欄位school tronclass
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorBackground"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:tabIndicatorColor="@color/tabtextcolor"
+        app:tabTextColor="@color/tabindicatorcolor">
+
+
+    </android.support.design.widget.TabLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager"
+        ></android.support.v4.view.ViewPager>
+
+</LinearLayout>

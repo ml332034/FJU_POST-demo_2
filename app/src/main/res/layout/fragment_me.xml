@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1EF">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#EE6435"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textPersonnalPage"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/me9"
+            android:textColor="#080808"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/settingbutton"
+            android:gravity="center_vertical" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_below="@+id/RelativeLayout2"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/userPicture"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/my"
+            android:contentDescription="@string/todo9" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/name9"
+            android:textColor="#686463"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="244dp"
+            android:layout_height="37dp"
+            android:layout_alignLeft="@+id/userName"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/userName"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/mail9"
+            android:textColor="#686463" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="206dp"
+        android:background="@mipmap/weatherbackground"
+        android:text="@string/weather9"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/horoscope"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/weather"
+        android:background="@drawable/horoscope_image"
+        android:text="@string/yunshi9"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/horoscope"
+        android:background="@drawable/news_image"
+        android:text="@string/news9"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

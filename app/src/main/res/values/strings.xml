@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">FJU POST</string>
+    <string name="picture">Picture</string>
+    <string name="ldap">FJU_EMAIL</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="notice">Notice</string>
+    <string name="todo">TODO</string>
+    <string name="student">student</string>
+    <string name="title_activity_poster">posterActivity</string>
+    <string name="button1">發佈新公告</string>
+    <string name="button2">公告發佈歷史</string>
+    <string name="button3">草稿箱</string>
+    <string name="newnotice">newnotice</string>
+    <string name="history">History</string>
+    <string name="drafts">Drafts</string>
+    <string name="title_home">個人儀表</string>
+    <string name="title_notifications">公告</string>
+
+    <string name="title_message">活動類別</string>
+    <string name="art">藝術文化</string>
+    <string name="scholar">學術</string>
+    <string name="pe">體育</string>
+    <string name="volunteer">服務</string>
+    <string name="career">職涯發展</string>
+    <string name="health">健康促進</string>
+    <string name="entertainment">休閒娛樂</string>
+    <string name="selfgrowth">自我成長</string>
+    <string name="campus">校園文化</string>
+    <string name="gmeeting">導師層級會議</string>
+    <string name="gdevelop">導師知能研習</string>
+    <string name="year">年</string>
+    <string-array name="yearnumber">
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>115</item>
+        <item>116</item>
+        <item>117</item>
+        <item>118</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>123</item>
+        <item>124</item>
+        <item>125</item>
+    </string-array>
+    <string name="month">月</string>
+    <string-array name="monthnum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="date">日</string>
+    <string name="bin">草稿箱</string>
+    <string name="send">送出</string>
+    <string name="hint">hint</string>
+    <string name="content">内容</string>
+    <string name="activityName">活動名稱</string>
+    <string name="activityTime">活動時間</string>
+    <string name="i1">個人儀錶板</string>
+    <string name="name1">楊小花</string>
+    <string name="email1">401234567@mail.fju.edu.tw</string>
+    <string name="record1">活動紀錄</string>
+    <string name="weather1">天氣</string>
+    <string name="todo2">TODO</string>
+    <string name="question">請選擇你想進入的版本：</string>
+    <string name="student_version">學生端</string>
+    <string name="promulgator_version">發佈端</string>
+    <string-array name="datenum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="title_1">公告</string>
+    <string name="title_2">行事曆</string>
+    <string name="title_3">我</string>
+
+
+    <string-array name="shopping_item">
+        <item>學術</item>
+        <item>藝文</item>
+        <item>體育</item>
+        <item>服務</item>
+        <item>職涯發展</item>
+        <item>健康促進</item>
+        <item>休閒娛樂</item>
+        <item>校園文化</item>
+        <item>導師層級會議</item>
+        <item>導師知能研習</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">tab1</string>
+    <string name="hello_blank_fragment2">tab2</string>
+    <string name="setactivity">依類別篩選活動</string>
+    <string name="dialog_title">活動類別</string>
+    <string name="ok">確認</string>
+    <string name="dismiss">離開</string>
+    <string name="clear">清除</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name9">楊小花</string>
+    <string name="me9">個人儀錶板</string>
+    <string name="mail9">401234567@mail.fju.edu.tw</string>
+    <string name="weather9">天氣</string>
+    <string name="yunshi9">星座運勢</string>
+    <string name="news9">新聞</string>
+    <string name="todo9">TODO</string>
+    <string name="due_date">Due Date</string>
+    <string name="DDL">事件到期時間</string>
+    <string name="select_date">select date</string>
+    <string name="select_time">select time</string>
+    <string name="due_time">Due Time</string>
+    <string name="due_day">事件到期日期</string>
+    <string name="add">確認添加</string>
+    <string name="will_do">代辦事項名稱</string>
+</resources>
