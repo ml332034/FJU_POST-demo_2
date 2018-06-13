@@ -33,7 +33,6 @@
         <activity android:name=".HoroscopeActivity" />
         <activity android:name=".NewsActivity"/>
         <activity android:name=".AddToDoListActivity"></activity>
-        <activity android:name=".ShowPostActivity"/>
         <activity android:name=".WebpostActivity"/>
     </application>
 

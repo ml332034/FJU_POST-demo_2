@@ -31,7 +31,7 @@ public class tronclass extends Fragment {
         super.onActivityCreated(savedInstanceState);
         adapter = new SimpleAdapter(getActivity(), getData(), R.layout.tab_listview_item,
                 new String[]{"img", "title", "body"},
-                new int[]{R.id.imgid, R.id.price, R.id.name});      //配置适配器，并获取对应Item中的ID
+                new int[]{R.id.imgid, R.id.name_text, R.id.status_text});      //配置适配器，并获取对应Item中的ID
         lv.setAdapter(adapter);
     }
     //数据的获取@！
