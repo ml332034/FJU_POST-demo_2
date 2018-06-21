@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPostActivity">
+
+    <ImageView
+        android:id="@+id/imgid"
+        android:layout_width="195dp"
+        android:layout_height="290dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_person_black_24dp" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="30dp"
+        android:text="NEXT"
+        />
+
+    <TextView
+        android:id="@+id/MobileName"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="144dp"
+        android:layout_marginStart="42dp"
+        android:text="12345678"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:id="@+id/MobilePrice"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="45dp"
+        android:text="PRICE"
+        android:textSize="30sp"
+        ></TextView>
+
+</RelativeLayout>
