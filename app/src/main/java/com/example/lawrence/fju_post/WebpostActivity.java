@@ -22,7 +22,7 @@ public class  WebpostActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         setContentView(webpostview);
         webpostview.setWebViewClient(new WebViewClient());
-        webpostview.loadUrl("http://activity.dsa.fju.edu.tw/Activity.jsp?activityID=26495");
+        webpostview.loadUrl("http://activity.dsa.fju.edu.tw/ActivityList.jsp");
 
     }
 }

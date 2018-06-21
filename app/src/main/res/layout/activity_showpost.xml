@@ -31,19 +31,17 @@
 
     <TextView
         android:id="@+id/class2"
-        android:layout_width="365dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/class3"
-        android:layout_marginLeft="5dp"
-        android:text="活動時間："
+        android:text="年"
         android:textSize="25sp"></TextView>
 
     <TextView
         android:id="@+id/class3"
         android:layout_width="373dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/class1"
         android:layout_marginLeft="5dp"
         android:text="活動類別："
@@ -54,10 +52,58 @@
         android:layout_width="373dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="181dp"
-        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/class7"
+        android:text="活動地點："
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/class5"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/class4"
+        android:text="主辦單位："
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/class6"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/class5"
         android:text="內容："
         android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/class7"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/class2"
+        android:text="開始時間"
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/class8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/class2"
+        android:layout_marginEnd="160dp"
+        android:text="月"
+        android:textSize="25sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/class9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/class2"
+        android:layout_marginEnd="70dp"
+        android:text="日"
+        android:textSize="25sp"></TextView>
+
+
 
 </RelativeLayout>
