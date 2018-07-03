@@ -81,7 +81,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/userEmail"
             android:layout_width="244dp"
             android:layout_height="37dp"
             android:layout_alignLeft="@+id/userName"

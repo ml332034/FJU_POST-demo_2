@@ -101,31 +101,6 @@ public class ShowPostActivity extends AppCompatActivity {
 
 
 
-    /*protected  void onStart(){
-        super.onStart();
-
-            mFirestore.collection("Users").document("34vigAEPpFPXlg9QsEoP").addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                String class1 = documentSnapshot.getString("name");
-                String class2 = documentSnapshot.getString("name");
-                String class3 = documentSnapshot.getString("name");
-                String class4 = documentSnapshot.getString("name");
-                String class5 = documentSnapshot.getString("name");
-                String class6 = documentSnapshot.getString("name");
-                String class7 = documentSnapshot.getString("name");
-
-                mclass1.setText("活動名稱 : "+class1);
-                mclass2.setText("活動時間 : "+class2);
-                mclass3.setText("活動類別 : "+class3);
-                mclass4.setText("活動地點 : "+class4);
-                mclass5.setText("主辦單位 : "+class5);
-                mclass6.setText("內容 : "+class6);
-                mclass7.setText("活動編號 : "+class7);
-            }
-        });
-
-    }*/
 
 
 

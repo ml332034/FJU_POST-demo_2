@@ -58,11 +58,7 @@ public class schoolactivity extends Fragment {
     // Click to activity
     public AdapterView.OnItemClickListener mListener;
 
-    //點擊
-    //RecyclerView mRecyclerView;
-    //LinearLayoutManager mLayoutManager;
-    ShowPostActivity mAdapter;
-    private String text;
+
 
 
     @Override
@@ -75,10 +71,9 @@ public class schoolactivity extends Fragment {
 
         //BUTTON
         mOrder = (Button) view.findViewById(R.id.btnorder);
-        mItemSelected = (TextView) view.findViewById(R.id.choose);
         listItems = getResources().getStringArray(R.array.shopping_item);
         checkedItems = new boolean[listItems.length];
-        mgetname = (TextView)view.findViewById(R.id.choose2);
+
         //RECYCER VIEW
         usersList = new ArrayList<>();
         usersListAdapter = new ShowPostAdapter(getActivity(),usersList);
@@ -88,38 +83,20 @@ public class schoolactivity extends Fragment {
 
         mMainList.setLayoutManager(new LinearLayoutManager(getActivity()));//创建默认的线性LayoutManager
         mMainList.setAdapter(usersListAdapter);
-        /*usersListAdapter.setOnItemClickListener(new ShowPostAdapter.OnItemClickListener(){
-            @SuppressLint("WrongConstant")
-            @Override
-            public void onItemClick(View view , int position){
-                Intent intent = new Intent(getActivity(), ShowPostActivity.class);
-                startActivity(intent);
-            }
-        });*/
-
-        //點擊
-        RecyclerView mRecyclerView;
-        LinearLayoutManager mLayoutManager;
-
-        //mAdapter = new ShowPostAdapter(usersList); ???????
-
-
-
-
 
 
         mFirestore = FirebaseFirestore.getInstance();
         mFirestore.collection("Users").addSnapshotListener(new com.google.firebase.firestore.EventListener<QuerySnapshot>() {
             @Override
-            public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
+            public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) { //QuerySnapshot查詢的結果 //透過addSnapshotListene獲取數據
                 if (e != null) {
                     Log.d(TAG, "Error:" + e.getMessage());
                 }
-                for (DocumentChange doc : documentSnapshots.getDocumentChanges()) {
+                for (DocumentChange doc : documentSnapshots.getDocumentChanges()) {//對匹配查詢的文檔的更改
                     if(doc.getType()  == DocumentChange.Type.ADDED) {
 
                         String user_id = doc.getDocument().getId();
-                        Post users = doc.getDocument().toObject(Post.class).with(user_id);
+                        Post users = doc.getDocument().toObject(Post.class).with(user_id); //取得 User 物件
                         usersList.add(users);
                         usersListAdapter.notifyDataSetChanged();
 
@@ -162,23 +139,19 @@ public class schoolactivity extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
                         String item ="";
-                        String[] box = new String[10];
+
                         for (int i = 0; i < mUserItems.size(); i++) {
                             item = item + listItems[mUserItems.get(i)];
-                            box[i] = listItems[mUserItems.get(i)];
 
-                            //for(int j = 0;j<box.length;j++) {
                                 filter(item);
-                            //}
+
                             if (i != mUserItems.size() - 1) ;
                             {
                                 item = item+ ",";
-                                //box[i] = listItems[mUserItems.get(i)];
-                                //filter(String.valueOf(box[i]));
 
                             }
                         }
-                        //mItemSelected.setText(item);
+
                     }
 
 
@@ -198,7 +171,7 @@ public class schoolactivity extends Fragment {
                         for (int i = 0; i < checkedItems.length; i++) {
                             checkedItems[i] = false;
                             mUserItems.clear();
-                            //mItemSelected.setText("");
+
                         }
                     }
                 });
@@ -218,15 +191,25 @@ public class schoolactivity extends Fragment {
         ArrayList<Post> filteredList = new ArrayList<>();
         for (Post item: usersList) {
 
-            //ArrayList<Users> filteredList = new ArrayList<>();
-                //for(int i = 0;i<usersList.size();i++){
-                    if (item.getActivity_type_id()!=null && text.contains(item.getActivity_type_id())) { //.contains(text)
-                        //mgetname.setText(item.getName());
+
+                    if (item.getActivity_type_id()!=null && item.getActivity_type_id().contains(text)) {
+
                         filteredList.add(item);
-                        //mgetname.setText(item.getName());
+
                     }
 
-                }
+
+        if (item.getActivity_type_id()!=null && text.contains(item.getActivity_type_id())) {
+
+            filteredList.add(item);
+            if(item.getActivity_type_id().contains(text)){
+                filteredList.add(item);
+            }
+
+            }
+
+
+        }
 
                 usersListAdapter.filterList(filteredList);
 

@@ -36,32 +36,21 @@ public class ShowPostAdapter extends RecyclerView.Adapter<ShowPostAdapter.ViewHo
     }
 
 
-    public ShowPostAdapter (ArrayList<Post>  exampleList){ usersList = exampleList;}
+    //public ShowPostAdapter (ArrayList<Post>  exampleList){ usersList = exampleList;}
 
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, final int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, final int viewType) {//该方法返回的是一个ViewHolder。方法是把View直接封装在ViewHolder中
 
 
         final View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.tab_listview_item, viewGroup, false);
         final ViewHolder vh = new ViewHolder(view);
-        //将创建的View注册点击事件
-        /*vh.view_container.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //注意这里使用getTag方法获取position
-                Context context = v.getContext();
-                Intent intent = new Intent(context, ShowPostActivity.class);
-
-                context.startActivity(intent);
-            }
-        });*/
 
         return vh;
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder,  int position) {
+    public void onBindViewHolder(ViewHolder viewHolder,  int position) {//适配渲染数据到View中
         viewHolder.nameText.setText(usersList.get(position).getActivity_name());
         viewHolder.statusText.setText(usersList.get(position).getActivity_type_id());
 
@@ -83,20 +72,10 @@ public class ShowPostAdapter extends RecyclerView.Adapter<ShowPostAdapter.ViewHo
 
 
     }
-    /*将点击事件转移给外面的调用者：
-    @Override
-    public void onClick(View v) {
-        //注意这里使用getTag方法获取position
-        Context context = v.getContext();
-        Intent intent = new Intent(context, ShowPostActivity.class);
-        intent.putExtra("activity_name",getTag(usersList).getName());
-        context.startActivity(intent);
 
-    }*/
-
-    public void setOnItemClickListener(OnItemClickListener listener) {
+    /*public void setOnItemClickListener(OnItemClickListener listener) {
         this.mOnItemClickListener = (OnItemClickListener) listener;
-    }
+    }*/
 
 
     //获取数据的数量

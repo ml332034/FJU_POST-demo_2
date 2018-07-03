@@ -29,6 +29,28 @@ public class NoticeFragment extends Fragment {
             }
         });
 
+        Button button2 = (Button) view.findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment2 = new draftActivity();
+                FragmentTransaction transaction =getFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, fragment2);
+                transaction.commit();
+            }
+        });
+
+        Button button3 = (Button) view.findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment2 = new historyActivity();
+                FragmentTransaction transaction =getFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, fragment2);
+                transaction.commit();
+            }
+        });
+
 
         return view;
     }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/history_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="300dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/draft_img"
+        app:layout_constraintStart_toEndOf="@+id/history_img"
+        app:layout_constraintTop_toTopOf="@+id/history_img" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="250dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="Status"
+        android:textColor="#6e6e6e"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+</android.support.constraint.ConstraintLayout>

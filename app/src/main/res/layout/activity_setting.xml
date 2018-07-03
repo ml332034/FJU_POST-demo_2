@@ -29,7 +29,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="設定"
+            android:text="@string/name9"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -40,16 +40,21 @@
         android:layout_height="513dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/userPicture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="157dp"
+            android:layout_height="133dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="115dp"
-            android:layout_toEndOf="@+id/textPicture"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="132dp"
+            android:contentDescription="@string/todo6"
             android:scaleType="centerInside"
             app:srcCompat="@mipmap/my" />
 
@@ -58,11 +63,13 @@
             android:layout_width="115dp"
             android:layout_height="35dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
             android:layout_marginTop="13dp"
             android:gravity="center_vertical"
-            android:text="楊小花"
+            android:text="@string/name1"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -76,7 +83,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:gravity="center_vertical"
-            android:text="姓名"
+            android:text="@string/name2"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -89,7 +96,7 @@
             android:layout_alignStart="@+id/textName"
             android:layout_marginTop="63dp"
             android:gravity="center_vertical"
-            android:text="目前頭像"
+            android:text="@string/imagenow"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -103,7 +110,7 @@
             android:layout_marginLeft="127dp"
             android:layout_marginStart="127dp"
             android:background="@drawable/c101b68f4b7e4c1dc5af3816f848bf80_d7190ffd9ceb259f21c6e93b0c0cb11827d7"
-            android:text="上傳頭像" />
+            android:text="@string/uploadimage" />
 
         <Button
             android:id="@+id/buttonSignOut"
@@ -113,18 +120,28 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="70dp"
             android:background="@drawable/c101b68f4b7e4c1dc5af3816f848bf80_d7190ffd9ceb259f21c6e93b0c0cb11827d7"
-            android:text="登出 / 切換帳號" />
+            android:text="@string/logout" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textAccount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22sp" />
 
         <TextView
             android:id="@+id/textAccount"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
+            android:layout_alignLeft="@+id/textName"
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textName"
-            android:layout_alignLeft="@+id/textName"
             android:layout_marginBottom="145dp"
             android:gravity="center_vertical"
-            android:text="帳號"
+            android:text="@string/ID"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -133,12 +150,25 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_alignBottom="@+id/textAccount"
-            android:layout_alignStart="@+id/userName"
             android:layout_alignLeft="@+id/userName"
+            android:layout_alignStart="@+id/userName"
             android:gravity="center"
+            android:text="@string/_401234567"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:text="401234567" />
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="79dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:background="@drawable/c101b68f4b7e4c1dc5af3816f848bf80_d7190ffd9ceb259f21c6e93b0c0cb11827d7"
+            android:text="@string/comfirmupload" />
+
 
     </RelativeLayout>
 
